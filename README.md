@@ -7,11 +7,20 @@ Przykładowy kod źródłowy pozwalający na:
 
 * Uruchomienie obu powyższych serwisów na [Cloud Run](https://cloud.google.com/run?hl=en)
 
-  
 
 ## 1. Przygotowanie projektu Google Cloud
 
 1. Uzyskaj kredyt Cloud **OnRamp**, lub skonfiguruj płatności w projekcie Google Cloud
+
+  > [!NOTE]
+  > Nie potrzebujesz karty kredytowej ani płatności — otrzymasz 10 dolarów darmowych środków. Zajmie Ci to mniej niż 2 minuty, wystarczy wpisać swoje imię i nazwisko oraz zaakceptować środki.
+   
+  <details>
+  <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
+      
+  * Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
+      
+   </details>
 
 2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
 
