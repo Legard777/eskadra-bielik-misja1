@@ -274,6 +274,10 @@ Przykładowy kod źródłowy pozwalający na:
    source reload-env.sh
    ```
 
+  - Wynik poprawnie wykonanego kroku:
+
+    ![Krok 7-3](/assets/eskadra-bielik-misja1_03_krok_07.png)
+
   </details>
 
 ## 2. Własna instancja Bielika
