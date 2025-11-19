@@ -20,7 +20,7 @@ Przykładowy kod źródłowy pozwalający na:
   <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
       
   * Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
-  * Kliknij w przycisk: <ins>Zaloguj się jako...</ins>
+    * Kliknij w przycisk: <ins>Zaloguj się jako...</ins>
 
     ![Krok 1-1](/assets/eskadra-bielik-misja1_01_krok_01.png)
 
@@ -128,6 +128,8 @@ Przykładowy kod źródłowy pozwalający na:
     * W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
 
     ![Krok 2-11](/assets/eskadra-bielik-misja1_11_krok_02.png)
+
+  * Gratulacje, możesz przejść do następnego kroku warsztatu.
 
   </details>
 
