@@ -19,8 +19,10 @@ Przykładowy kod źródłowy pozwalający na:
   <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
       
   * Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
-      
-   </details>
+
+    ![Krok 1](/assets/eskadra-bielik-misja1_01_krok_01.png)
+  
+  </details>
 
 2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
 
