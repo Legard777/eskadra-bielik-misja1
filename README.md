@@ -150,7 +150,11 @@ Przykładowy kod źródłowy pozwalający na:
 
   </details>
 
-4. Otwórz Cloud Shell ([dokumentacja](https://cloud.google.com/shell/docs))
+  <details>
+  
+  <summary>Krok 3: Otwórz terminal Cloud Shell ([dokumentacja](https://cloud.google.com/shell/docs))</summary>
+
+  </details>
 
 5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
    ```bash
