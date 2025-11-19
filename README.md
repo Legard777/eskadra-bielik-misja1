@@ -295,6 +295,9 @@ Przykładowy kod źródłowy pozwalający na:
 > [!WARNING]
 > Twoja sesja terminala musi być aktywna !
 
+> [!TIP]
+> Odpowiedz twierdząco, jeżeli system spyta o włączenie odpowiednich API oraz stworzenie rejestru artefaktów.
+
 - Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
 
    ```bash
@@ -320,7 +323,23 @@ Przykładowy kod źródłowy pozwalający na:
   
   Do you want to continue (Y/n)? 
   ```
-  
+
+- Poprawne wykonanie zakończy się poniższym komunikatem:
+
+  ```bash
+  Building using Dockerfile and deploying container to Cloud Run service [ollama-bielik-v3] in project [eskadra-bielik-.....] region [europe-west1]
+  Building and deploying new service...                                                                                                                 
+    Validating Service...done                                                                                                                           
+    Uploading sources...done                                                                                                                            
+    Building Container... Logs are available at [https://console.cloud.google.com/cloud-build/builds;region=europe-west1/3....]....done                                                                                                                 
+    Setting IAM Policy...done                                                                                                                           
+    Creating Revision...done                                                                                                                            
+    Routing traffic...done                                                                                                                              
+  Done.                                                                                                                                                 
+  Service [ollama-bielik-v3] revision [ollama-bielik-v3-.....] has been deployed and is serving 100 percent of traffic.
+  Service URL: https://ollama-bielik-v3-......europe-west1.run.app
+  ```
+
 - Jeżeli pojawił się błąd z poniższą informacją:
   
   ```bash
@@ -343,8 +362,7 @@ Przykładowy kod źródłowy pozwalający na:
    ```bash
    gcloud run services describe $BIELIK_SERVICE_NAME --region=$GOOGLE_CLOUD_LOCATION --format='value(status.url)'
    ```
->[!TIP]
->Odpowiedz twierdząco, jeżeli system spyta o włączenie odpowiednich API oraz stworzenie rejestru artefaktów
+
 
 4. Przypisz powyższy URL do zmiennej środowiskowej `OLLAMA_API_BASE` w pliku `.env` i następnie wczytaj zmienne środowiskowe ponownie:
    ```bash
