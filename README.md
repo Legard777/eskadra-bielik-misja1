@@ -105,7 +105,7 @@ Przykładowy kod źródłowy pozwalający na:
     ![Krok 2-6](/assets/eskadra-bielik-misja1_06_krok_02.png)
 
   * Pojawiła się informacja o Twoich kontach rozliczeniowych
-  * Kilknij w zakładkę: <ins>Twoje projekty</ins>
+    * Kilknij w zakładkę: <ins>Twoje projekty</ins>
 
     ![Krok 2-7](/assets/eskadra-bielik-misja1_07_krok_02.png)
 
@@ -114,8 +114,8 @@ Przykładowy kod źródłowy pozwalający na:
     ![Krok 2-8](/assets/eskadra-bielik-misja1_08_krok_02.png)
 
   * Powróć na główny ekran Google Cloud Platform.
-  * Kliknij w logo: <ins>Google Cloud</ins>
-  * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+    * Kliknij w logo: <ins>Google Cloud</ins>
+    * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
 
     ![Krok 2-9](/assets/eskadra-bielik-misja1_09_krok_02.png)
 
