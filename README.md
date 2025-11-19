@@ -42,7 +42,23 @@ Przykładowy kod źródłowy pozwalający na:
   * W polu **Konto rozliczeniowe** pojawi się informacja o treści **Google Cloud Platform Trial Billing...** oznacza to, że środki zostały aktywowane na Twoim koncie @gmail.com oraz konto bilingowe zostało poprawnie aktywowane bez konieczności podawania karty kredytowej - masz środki na dalszą część warsztatu.
 
     ![Krok 1-5](/assets/eskadra-bielik-misja1_05_krok_01.png)
-  
+
+  * Zmieńmy nazwę na bardziej przyjazną, wybierz pozycję: _Zarządzanie kontem_
+
+    ![Krok 1-6](/assets/eskadra-bielik-misja1_06_krok_01.png)
+
+  * Kliknij w ikonkę: pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
+    ```
+    eskadra-bielik-misja1
+    ```
+    Naciśnij przycisk: <ins>Zmień nazwę</ins>
+
+    ![Krok 1-7](/assets/eskadra-bielik-misja1_07_krok_01.png)
+
+  * x
+
+    ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
+    
   </details>
 
 2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
