@@ -16,6 +16,7 @@ Przykładowy kod źródłowy pozwalający na:
   > Nie potrzebujesz karty kredytowej ani płatności — otrzymasz 10 dolarów darmowych środków. Zajmie Ci to mniej niż 2 minuty, wystarczy wpisać swoje imię i nazwisko oraz zaakceptować środki.
    
   <details>
+  
   <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
       
   * Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
