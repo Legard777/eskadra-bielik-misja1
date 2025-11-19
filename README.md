@@ -156,9 +156,19 @@ Przykładowy kod źródłowy pozwalający na:
 
   1 Na górnym pasku Google Cloud Platform.
   
-  - Kliknij w ikonkę terminala: <ins>Wybierz projekt</ins>
+  - Kliknij w ikonkę terminala CLI: ![Ikona terminala CLI](/assets/eskadra-bielik-misja1_01_krok_03_ikona_terminala.png)
 
       ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_03.png)
+
+  2 Po uruchomieniu terminala:
+  
+  - Kliknij w przycisk: <ins>Autoryzuj</ins>
+
+    ![Krok 2-9](/assets/eskadra-bielik-misja1_02_krok_03.png)
+
+  3 Terminal CLI poprawnie uruchomiony
+
+  ![Krok 2-9](/assets/eskadra-bielik-misja1_03_krok_03.png)
 
   </details>
 
