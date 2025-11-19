@@ -211,7 +211,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   1. Otwórz plik `.env` w edytorze Cloud Shell, kopiując w terminalu poniższe polecenie:
      ```bash
-     cloudshell edit-file .env
+     cloudshell open-workspace . | cloudshell edit-file .env
      ```
 
   2. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID` i wpisz swój kod (zgodny z OnRamp Credits) podany przez trenera podczas warsztatów.
