@@ -388,6 +388,42 @@ Przykładowy kod źródłowy pozwalający na:
    ```bash
    curl "${OLLAMA_API_BASE}/api/tags"
    ```
+   - odpowiedź powinna wyglądać jak poniżej:
+    ```json
+    {
+      "models": [
+        {
+          "name": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+          "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+          "modified_at": ".........",
+          "size": 5061216212,
+          "digest": "..............",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "llama",
+            "families": [
+              "llama"
+            ],
+            "parameter_size": "4.8B",
+            "quantization_level": "Q8_0"
+          }
+        }
+      ]
+    }
+    ```
+   - Jak to rozumieć...:
+    # 🦅 SpeakLeash / Bielik 4.5B v3.0 Instruct
+  
+    > **Wersja:** `Q8_0` (High Quality) &nbsp;|&nbsp; **Rodzina:** `Llama` &nbsp;|&nbsp; **Parametry:** `4.8B`
+    
+    *   📦 **Format:** `GGUF`
+    *   💾 **Rozmiar:** 4.71 GB
+    *   📅 **Data:** .....
+    
+    **Digest:**
+    `........`
+
 * Wyślij zapytanie przez API
    ```bash
    curl "${OLLAMA_API_BASE}/api/generate" -d "{
