@@ -63,7 +63,7 @@ Przykładowy kod źródłowy pozwalający na:
 
     ![Krok 1-7](/assets/eskadra-bielik-misja1_07_krok_01.png)
 
-  8 W polu _Konto rozliczeniowe_ nowa nazwa została poprawnie zmieniona. 
+  8 W polu *Konto rozliczeniowe* nowa nazwa została poprawnie zmieniona. 
 
    ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
 
@@ -123,7 +123,7 @@ Przykładowy kod źródłowy pozwalający na:
 
     ![Krok 2-7](/assets/eskadra-bielik-misja1_07_krok_02.png)
 
-  8 Jeżeli w pozycji _Konto rozliczeniowe__ widzisz nazwę **eskadra-bielik-misja1**, to oznacza, że wszystkie kroki wcześniejsze zostały wykonane poprawnie
+  8 Jeżeli w pozycji *Konto rozliczeniowe* widzisz nazwę **eskadra-bielik-misja1**, to oznacza, że wszystkie kroki wcześniejsze zostały wykonane poprawnie
 
    ![Krok 2-8](/assets/eskadra-bielik-misja1_08_krok_02.png)
 
