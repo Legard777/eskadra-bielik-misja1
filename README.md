@@ -363,6 +363,13 @@ Przykładowy kod źródłowy pozwalający na:
    gcloud run services describe $BIELIK_SERVICE_NAME --region=$GOOGLE_CLOUD_LOCATION --format='value(status.url)'
    ```
 
+- Skopiuj uzyskany adres do "schowka"
+
+- Wykonaj te same czynności co w **Kroku 6**
+  - Możesz też kliknąć bezpośrednio w przycisk: <ins>Otwórz edytor</ins>
+  - Odnajdź pozycję **# OLLAMA_API_BASE=** (linia nr 27)
+  - Usuń znak **#**
+  - Po znaku **=** wklej skopiowany adres usługi Cloud Run ollama-bielik-v3....
 
 4. Przypisz powyższy URL do zmiennej środowiskowej `OLLAMA_API_BASE` w pliku `.env` i następnie wczytaj zmienne środowiskowe ponownie:
    ```bash
