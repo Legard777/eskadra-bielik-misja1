@@ -289,9 +289,44 @@ Przykładowy kod źródłowy pozwalający na:
 
 2. Poniższa komenda stworzy nową usługę w Cloud Run o nazwie takiej jak wartość zmiennej `$BIELIK_SERVICE_NAME`. Na podstawie definicji w `ollama-bielik/Dockerfile` nardzędzie `gcloud` stworzy odpowiedni kontener, skonfiguruje usługę Ollama oraz wczyta odpowiednią wersję modelu Bielik.
 
+- Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
+
    ```bash
-   gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --gpu 1 --gpu-type nvidia-l4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --no-gpu-zonal-redundancy --timeout 600 --labels dev-tutorial=codelab-dos-$BIELIK_EVENT_ID
+   gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --gpu 1 --gpu-type nvidia-l4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --no-gpu-zonal-redundancy --timeout 600 --labels dev-tutorial=codelab-dos-$BIELIK_EVENT_ID --async
    ```
+
+- Na zadane pytanie, odpowiedz **Y**.
+  ```bash
+  The following APIs are not enabled on project [eskadra-bielik-.....]:
+        artifactregistry.googleapis.com
+        cloudbuild.googleapis.com
+        run.googleapis.com
+
+  Do you want enable these APIs to continue (this will take a few minutes)? (Y/n)?  
+  ```
+
+- Na kolejne zadane pytanie, odpowiedz **Y**.
+  ```bash
+  Enabling APIs on project [eskadra-bielik-.....]...
+  Operation "operations/............." finished successfully.
+  Deploying from source requires an Artifact Registry Docker repository to store built containers. A repository named [cloud-run-source-deploy] in region
+   [europe-west1] will be created.
+  
+  Do you want to continue (Y/n)? 
+  ```
+  
+- Jeżeli pojawił się błąd z poniższą informacją:
+  
+  ```bash
+  Building using Dockerfile and deploying container to Cloud Run service [ollama-bielik-v3] in project [eskadra-bielik-.....] region [europe-west1] ERROR: (gcloud.run.deploy) spec.template.metadata.annotations[autoscaling.knative.dev/maxScale]: You do not have quota for using GPUs without zonal redundancy. Learn more about GPU zonal redundancy: g.co/cloudrun/gpu-redundancy-help
+
+  To request quota: g.co/cloudrun/gpu-quota
+  ```
+
+  - Uruchom poniższą komendę bez GPU (będzie wolniej)...
+  ```bash
+  gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --timeout 600 --labels dev-tutorial=xyz-$BIELIK_EVENT_ID --async
+  ```
 
 >[!CAUTION]
 >Flaga `--allow-unauthenticated` udostępnia usługę publicznie w internecie i każdy kto zna URL, może zaczać z niej korzystać. W środowisku produkcyjnym zazwyczaj trzeba tę flagę usunąć i odpowiednio skonfigurować reguły dostępu.
