@@ -264,6 +264,10 @@ Przykładowy kod źródłowy pozwalający na:
 
   1 Kliknij w przycisk z napisem: <ins>Otwórz terminal</ins>, aby powrócić do linii komend
 
+  ![Krok 7-1](/assets/eskadra-bielik-misja1_01_krok_07.png)
+
+  ![Krok 7-2](/assets/eskadra-bielik-misja1_02_krok_07.png)
+
   2 Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER
 
    ```bash
