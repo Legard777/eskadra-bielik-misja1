@@ -154,6 +154,12 @@ Przykładowy kod źródłowy pozwalający na:
   
   <summary>Krok 3: Otwórz terminal Cloud Shell ([dokumentacja](https://cloud.google.com/shell/docs))</summary>
 
+  1 Na górnym pasku Google Cloud Platform.
+  
+  - Kliknij w ikonkę terminala: <ins>Wybierz projekt</ins>
+
+      ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_03.png)
+
   </details>
 
 5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
