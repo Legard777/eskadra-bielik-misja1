@@ -73,13 +73,13 @@ Przykładowy kod źródłowy pozwalający na:
   <summary>Krok 2: Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
 
   * Powróć na główny ekran Google Cloud Platform.
-  * Kliknij w logo: <ins>Google Cloud</ins>
-  * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+    * Kliknij w logo: <ins>Google Cloud</ins>
+    * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
 
     ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_02.png)
 
   * Po wybraniu pojawi się okienko z informacją o projektach
-  * Kliknij w przycisk: <ins>Nowy projekt</ins>
+    * Kliknij w przycisk: <ins>Nowy projekt</ins>
   
     ![Krok 2-2](/assets/eskadra-bielik-misja1_02_krok_02.png)
 
@@ -91,7 +91,7 @@ Przykładowy kod źródłowy pozwalający na:
     ```
     eskadra-bielik
     ```
-  * Klikamy przycisk: <ins>Utwórz</ins>
+    * Klikamy przycisk: <ins>Utwórz</ins>
 
     ![Krok 2-4](/assets/eskadra-bielik-misja1_04_krok_02.png)
 
@@ -100,7 +100,7 @@ Przykładowy kod źródłowy pozwalający na:
     ![Krok 2-5](/assets/eskadra-bielik-misja1_05_krok_02.png)
 
   * W celu weryfikacji czy utworzone konto zostało powiązane z kontem bilinowym, na którym mamy uzyskane środki kredytowe
-  * Z lewego menu wybierz pozycję: <ins>Płatności</ins>
+    * Z lewego menu wybierz pozycję: <ins>Płatności</ins>
 
     ![Krok 2-6](/assets/eskadra-bielik-misja1_06_krok_02.png)
 
@@ -124,8 +124,8 @@ Przykładowy kod źródłowy pozwalający na:
     ![Krok 2-10](/assets/eskadra-bielik-misja1_10_krok_02.png)
 
   * Wracamy na główną stronę tym razem mamy już uzupełnione informacje na jakim projekcie pracujemy
-  * Zobacz w opisie: _Pracujesz w:_ jest informacja, że pracujemy na projkcie: <ins>eskadra-bielik</ins>
-  * W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
+    * Zobacz w opisie: _Pracujesz w:_ jest informacja, że pracujemy na projkcie: <ins>eskadra-bielik</ins>
+    * W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
 
     ![Krok 2-11](/assets/eskadra-bielik-misja1_11_krok_02.png)
 
