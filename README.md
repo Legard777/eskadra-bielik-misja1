@@ -196,6 +196,7 @@ Przykładowy kod źródłowy pozwalający na:
 
    ```bash
    mv .env.sample .env
+   ls -la .env
    ```
 
   </details>
