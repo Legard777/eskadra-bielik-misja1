@@ -55,7 +55,7 @@ Przykładowy kod źródłowy pozwalający na:
 
     ![Krok 1-7](/assets/eskadra-bielik-misja1_07_krok_01.png)
 
-  * x
+  * W polu _Konto rozliczeniowe_ nowa nazwa została poprawnie zmieniona. 
 
     ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
     
