@@ -280,7 +280,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   </details>
 
-## 2. Własna instancja Bielika
+## 2. Własna instancja Bielika na Google Cloud Platform
 
 1. Ustal domyślne konto serwisowe dla wybranego projektu `default service account`
    ```bash
@@ -292,7 +292,7 @@ Przykładowy kod źródłowy pozwalający na:
 - Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
 
    ```bash
-   gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --gpu 1 --gpu-type nvidia-l4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --no-gpu-zonal-redundancy --timeout 600 --labels dev-tutorial=codelab-dos-$BIELIK_EVENT_ID --async
+   gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --gpu 1 --gpu-type nvidia-l4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --no-gpu-zonal-redundancy --timeout 600 --labels dev-tutorial=codelab-dos-$BIELIK_EVENT_ID
    ```
 
 - Na zadane pytanie, odpowiedz **Y**.
@@ -323,9 +323,10 @@ Przykładowy kod źródłowy pozwalający na:
   To request quota: g.co/cloudrun/gpu-quota
   ```
 
-  - Uruchom poniższą komendę bez GPU (będzie wolniej)...
+>[!TIP]
+>Uruchom poniższą komendę bez GPU (będzie wolniej)...
   ```bash
-  gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --timeout 600 --labels dev-tutorial=xyz-$BIELIK_EVENT_ID --async
+  gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --timeout 600 --labels dev-tutorial=xyz-$BIELIK_EVENT_ID
   ```
 
 >[!CAUTION]
