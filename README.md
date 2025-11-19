@@ -70,7 +70,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   <details>
   
-  <summary>Krok 2:Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
+  <summary>Krok 2: Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
 
   * Powróć na główny ekran Google Cloud Platform.
   * Kliknij w logo: <ins>Google Cloud</ins>
@@ -81,11 +81,11 @@ Przykładowy kod źródłowy pozwalający na:
   * Po wybraniu pojawi się okienko z informacją o projektach
   * Kliknij w przycisk: <ins>Nowy projekt</ins>
   
-    ![Krok 2-1](/assets/eskadra-bielik-misja1_02_krok_02.png)
+    ![Krok 2-2](/assets/eskadra-bielik-misja1_02_krok_02.png)
 
   * Pojawi się formularz z informacją o nowym projekcie, gdzie nadamy własną nazwę projektu
 
-    ![Krok 3-1](/assets/eskadra-bielik-misja1_03_krok_02.png)
+    ![Krok 2-3](/assets/eskadra-bielik-misja1_03_krok_02.png)
 
   * W pozycji: _Nazwa projektu_ podajemy naszą własną nazwę:
     ```
@@ -93,7 +93,41 @@ Przykładowy kod źródłowy pozwalający na:
     ```
   * Klikamy przycisk: <ins>Utwórz</ins>
 
-    ![Krok 4-1](/assets/eskadra-bielik-misja1_04_krok_02.png)
+    ![Krok 2-4](/assets/eskadra-bielik-misja1_04_krok_02.png)
+
+  * Pojawi się informacja o utworzeniu projektu
+
+    ![Krok 2-5](/assets/eskadra-bielik-misja1_05_krok_02.png)
+
+  * W celu weryfikacji czy utworzone konto zostało powiązane z kontem bilinowym, na którym mamy uzyskane środki kredytowe
+  * Z lewego menu wybierz pozycję: <ins>Płatności</ins>
+
+    ![Krok 2-6](/assets/eskadra-bielik-misja1_06_krok_02.png)
+
+  * Pojawiła się informacja o Twoich kontach rozliczeniowych
+  * Kilknij w zakładkę: <ins>Twoje projekty</ins>
+
+    ![Krok 2-7](/assets/eskadra-bielik-misja1_07_krok_02.png)
+
+  * Jeżeli w pozycji _Konto rozliczeniowe__ widzisz nazwę **eskadra-bielik-misja1**, to oznacza, że wszystkie kroki wcześniejsze zostały wykonane poprawnie
+
+    ![Krok 2-8](/assets/eskadra-bielik-misja1_08_krok_02.png)
+
+  * Powróć na główny ekran Google Cloud Platform.
+  * Kliknij w logo: <ins>Google Cloud</ins>
+  * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+
+    ![Krok 2-9](/assets/eskadra-bielik-misja1_09_krok_02.png)
+
+  * Wybierz z listy projekt o nazwie: <ins>eskadra-bielik</ins>
+
+    ![Krok 2-10](/assets/eskadra-bielik-misja1_10_krok_02.png)
+
+  * Wracamy na główną stronę tym razem mamy już uzupełnione informacje na jakim projekcie pracujemy
+  * Zobacz w opisie: _Pracujesz w:_ jest informacja, że pracujemy na projkcie: <ins>eskadra-bielik</ins>
+  * W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
+
+    ![Krok 2-11](/assets/eskadra-bielik-misja1_11_krok_02.png)
 
   </details>
 
