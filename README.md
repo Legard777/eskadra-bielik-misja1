@@ -20,52 +20,58 @@ Przykładowy kod źródłowy pozwalający na:
   <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
       
   1. Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
-    
-  - [ ] Kliknij w przycisk: <ins>Zaloguj się jako...</ins>
+  
+  - Kliknij w przycisk: <ins>Zaloguj się jako...</ins>
 
     ![Krok 1-1](/assets/eskadra-bielik-misja1_01_krok_01.png)
 
-  * Wybierz konto z domeny @gmail.com i naciśnij przycisk: <ins>Dalej</ins>
+  2 Wybierz konto z domeny @gmail.com i naciśnij przycisk: <ins>Dalej</ins>
 
-    ![Krok 1-2](/assets/eskadra-bielik-misja1_02_krok_01.png)
+   ![Krok 1-2](/assets/eskadra-bielik-misja1_02_krok_01.png)
 
-  * Po poprawnym zalogowaniu pojawi się Twoje konto z domeny @gmail.com, naciśnij przycisk: <ins>Click here to access your credits</ins>
+  3 Po poprawnym zalogowaniu pojawi się Twoje konto z domeny @gmail.com, naciśnij przycisk: <ins>Click here to access your credits</ins>
 
-    ![Krok 1-3](/assets/eskadra-bielik-misja1_03_krok_01.png)
+   ![Krok 1-3](/assets/eskadra-bielik-misja1_03_krok_01.png)
 
-  * Otworzy się nowa zakładka w przeglądarce
-    * Zweryfikuj uzupełnione pola: Imię, Nazwisko
-    * W polu: _Adres e-mail konta_ pojawi się adres Twojego konta w domenie @gmail.com
-    * Pole: **Kod kuponu - PROSZĘ NIE EDYTOWAĆ !** 
-    * Naciśnij przycisk: <ins>Zaakceptuj i kontynuuj</ins>
+  4 Otworzy się nowa zakładka w przeglądarce
+
+  - Zweryfikuj uzupełnione pola: Imię, Nazwisko
+    
+  - W polu: _Adres e-mail konta_ pojawi się adres Twojego konta w domenie @gmail.com
+    
+  - Pole: **Kod kuponu - PROSZĘ NIE EDYTOWAĆ !** 
+    
+  - Naciśnij przycisk: <ins>Zaakceptuj i kontynuuj</ins>
 
     ![Krok 1-4](/assets/eskadra-bielik-misja1_04_krok_01.png)
 
-  * W polu **Konto rozliczeniowe** pojawi się informacja o treści **Google Cloud Platform Trial Billing...** oznacza to, że środki zostały aktywowane na Twoim koncie @gmail.com oraz konto bilingowe zostało poprawnie aktywowane bez konieczności podawania karty kredytowej - masz środki na dalszą część warsztatu.
+  5 W polu **Konto rozliczeniowe** pojawi się informacja o treści **Google Cloud Platform Trial Billing...** oznacza to, że środki zostały aktywowane na Twoim koncie @gmail.com oraz konto bilingowe zostało poprawnie aktywowane bez konieczności podawania karty kredytowej - masz środki na dalszą część warsztatu.
 
-    ![Krok 1-5](/assets/eskadra-bielik-misja1_05_krok_01.png)
+   ![Krok 1-5](/assets/eskadra-bielik-misja1_05_krok_01.png)
 
-  * Zmieńmy nazwę na bardziej przyjazną, wybierz pozycję: _Zarządzanie kontem_
+  6 Zmieńmy nazwę na bardziej przyjazną, wybierz pozycję: _Zarządzanie kontem_
 
-    ![Krok 1-6](/assets/eskadra-bielik-misja1_06_krok_01.png)
+   ![Krok 1-6](/assets/eskadra-bielik-misja1_06_krok_01.png)
 
-  * Kliknij w ikonkę: _Edycji_ ![Ikona Edycji](/assets/eskadra-bielik-misja1_06_krok_01_ikona_edycji.png) pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
-    ```
-    eskadra-bielik-misja1
-    ```
-    Naciśnij przycisk: <ins>Zmień nazwę</ins>
+  7 Kliknij w ikonkę: _Edycji_ ![Ikona Edycji](/assets/eskadra-bielik-misja1_06_krok_01_ikona_edycji.png) pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
+
+  ```
+  eskadra-bielik-misja1
+  ```
+  
+  - Naciśnij przycisk: <ins>Zmień nazwę</ins>
 
     ![Krok 1-7](/assets/eskadra-bielik-misja1_07_krok_01.png)
 
-  * W polu _Konto rozliczeniowe_ nowa nazwa została poprawnie zmieniona. 
+  8 W polu _Konto rozliczeniowe_ nowa nazwa została poprawnie zmieniona. 
 
-    ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
+   ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
 
-  * W celu weryfikacji przyznanych środków wybierz pozycje: _Środki_ i zobacz w tabeli przyznane środki kolumnę o tytule **Stan**, która wskazuje na **Dostępny**. 
+  9 W celu weryfikacji przyznanych środków wybierz pozycje: _Środki_ i zobacz w tabeli przyznane środki kolumnę o tytule **Stan**, która wskazuje na **Dostępny**. 
 
-    ![Krok 1-9](/assets/eskadra-bielik-misja1_09_krok_01.png)
+   ![Krok 1-9](/assets/eskadra-bielik-misja1_09_krok_01.png)
 
-  * Gratulacje, możesz przejść do następnego kroku warsztatu.
+  10 Gratulacje, możesz przejść do następnego kroku warsztatu.
 
   </details>
 
@@ -73,64 +79,74 @@ Przykładowy kod źródłowy pozwalający na:
   
   <summary>Krok 2: Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
 
-  * Powróć na główny ekran Google Cloud Platform.
-    * Kliknij w logo: <ins>Google Cloud</ins>
-    * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+  1 Powróć na główny ekran Google Cloud Platform.
+  
+  - Kliknij w logo: <ins>Google Cloud</ins>
+  
+  - Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
 
-    ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_02.png)
+      ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_02.png)
 
-  * Po wybraniu pojawi się okienko z informacją o projektach
-    * Kliknij w przycisk: <ins>Nowy projekt</ins>
+  2 Po wybraniu pojawi się okienko z informacją o projektach
+
+  - Kliknij w przycisk: <ins>Nowy projekt</ins>
   
     ![Krok 2-2](/assets/eskadra-bielik-misja1_02_krok_02.png)
 
-  * Pojawi się formularz z informacją o nowym projekcie, gdzie nadamy własną nazwę projektu
+  3 Pojawi się formularz z informacją o nowym projekcie, gdzie nadamy własną nazwę projektu
 
-    ![Krok 2-3](/assets/eskadra-bielik-misja1_03_krok_02.png)
+   ![Krok 2-3](/assets/eskadra-bielik-misja1_03_krok_02.png)
 
-  * W pozycji: _Nazwa projektu_ podajemy naszą własną nazwę:
-    ```
-    eskadra-bielik
-    ```
-    * Klikamy przycisk: <ins>Utwórz</ins>
+  4 W pozycji: _Nazwa projektu_ podajemy naszą własną nazwę:
+  
+  ```
+  eskadra-bielik
+  ```
+
+  - Klikamy przycisk: <ins>Utwórz</ins>
 
     ![Krok 2-4](/assets/eskadra-bielik-misja1_04_krok_02.png)
 
-  * Pojawi się informacja o utworzeniu projektu
+  5 Pojawi się informacja o utworzeniu projektu
 
-    ![Krok 2-5](/assets/eskadra-bielik-misja1_05_krok_02.png)
+   ![Krok 2-5](/assets/eskadra-bielik-misja1_05_krok_02.png)
 
-  * W celu weryfikacji czy utworzone konto zostało powiązane z kontem bilinowym, na którym mamy uzyskane środki kredytowe
-    * Z lewego menu wybierz pozycję: <ins>Płatności</ins>
+  6 W celu weryfikacji czy utworzone konto zostało powiązane z kontem bilinowym, na którym mamy uzyskane środki kredytowe
+    
+  - Z lewego menu wybierz pozycję: <ins>Płatności</ins>
 
     ![Krok 2-6](/assets/eskadra-bielik-misja1_06_krok_02.png)
 
-  * Pojawiła się informacja o Twoich kontach rozliczeniowych
-    * Kilknij w zakładkę: <ins>Twoje projekty</ins>
+  7 Pojawiła się informacja o Twoich kontach rozliczeniowych
+  
+  - Kilknij w zakładkę: <ins>Twoje projekty</ins>
 
     ![Krok 2-7](/assets/eskadra-bielik-misja1_07_krok_02.png)
 
-  * Jeżeli w pozycji _Konto rozliczeniowe__ widzisz nazwę **eskadra-bielik-misja1**, to oznacza, że wszystkie kroki wcześniejsze zostały wykonane poprawnie
+  8 Jeżeli w pozycji _Konto rozliczeniowe__ widzisz nazwę **eskadra-bielik-misja1**, to oznacza, że wszystkie kroki wcześniejsze zostały wykonane poprawnie
 
-    ![Krok 2-8](/assets/eskadra-bielik-misja1_08_krok_02.png)
+   ![Krok 2-8](/assets/eskadra-bielik-misja1_08_krok_02.png)
 
-  * Powróć na główny ekran Google Cloud Platform.
-    * Kliknij w logo: <ins>Google Cloud</ins>
-    * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+  9 Powróć na główny ekran Google Cloud Platform.
+  
+  - Kliknij w logo: <ins>Google Cloud</ins>
+  - Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
 
     ![Krok 2-9](/assets/eskadra-bielik-misja1_09_krok_02.png)
 
-  * Wybierz z listy projekt o nazwie: <ins>eskadra-bielik</ins>
+  10 Wybierz z listy projekt o nazwie: <ins>eskadra-bielik</ins>
 
-    ![Krok 2-10](/assets/eskadra-bielik-misja1_10_krok_02.png)
+   ![Krok 2-10](/assets/eskadra-bielik-misja1_10_krok_02.png)
 
-  * Wracamy na główną stronę tym razem mamy już uzupełnione informacje na jakim projekcie pracujemy
-    * Zobacz w opisie: _Pracujesz w:_ jest informacja, że pracujemy na projkcie: <ins>eskadra-bielik</ins>
-    * W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
+  11 Wracamy na główną stronę tym razem mamy już uzupełnione informacje na jakim projekcie pracujemy
+  
+  - Zobacz w opisie: _Pracujesz w:_ jest informacja, że pracujemy na projkcie: <ins>eskadra-bielik</ins>
+  
+  - W _Numer projektu_ i _Identyfiaktor projektu_ znajdują się Twoje uniklane dane, gdzie pomoc Google Cloud Platform w tej sposób identyfikuje Twój projekt
 
     ![Krok 2-11](/assets/eskadra-bielik-misja1_11_krok_02.png)
 
-  * Gratulacje, możesz przejść do następnego kroku warsztatu.
+  12 Gratulacje, możesz przejść do następnego kroku warsztatu.
 
   </details>
 
