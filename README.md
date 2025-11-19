@@ -377,6 +377,8 @@ Przykładowy kod źródłowy pozwalający na:
    ```
 
 
+> [!TIP]
+> Czy to faktycznie działa?
 
 ### Jak sprawdzić, czy nasz Bielik jest gotowy?
 
