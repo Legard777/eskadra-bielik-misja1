@@ -19,8 +19,29 @@ Przykładowy kod źródłowy pozwalający na:
   <summary>Krok 1: Włącz konto billingowe, dzięki uzyskanym środkom</summary>
       
   * Załóż konto rozliczeniowe z 10 dolarami kredytu, który będzie potrzebny do wdrożenia. Upewnij się, że masz konto Gmail.
+  * Kliknij w przycisk: <ins>Zaloguj się jako...</ins>
 
-    ![Krok 1](/assets/eskadra-bielik-misja1_01_krok_01.png)
+    ![Krok 1-1](/assets/eskadra-bielik-misja1_01_krok_01.png)
+
+  * Wybierz konto z domeny @gmail.com i naciśnij przycisk: <ins>Dalej</ins>
+
+    ![Krok 1-2](/assets/eskadra-bielik-misja1_02_krok_01.png)
+
+  * Po poprawnym zalogowaniu pojawi się Twoje konto z domeny @gmail.com, naciśnij przycisk: <ins>Click here to access your credits</ins>
+
+    ![Krok 1-3](/assets/eskadra-bielik-misja1_03_krok_01.png)
+
+  * Otworzy się nowa zakładka w przeglądarce
+    * Zweryfikuj uzupełnione pola: Imię, Nazwisko
+    * W polu: _Adres e-mail konta_ pojawi się adres Twojego konta w domenie @gmail.com
+    * Pole: **Kod kuponu - PROSZĘ NIE EDYTOWAĆ !** 
+    * Naciśnij przycisk: <ins>Zaakceptuj i kontynuuj</ins>
+
+    ![Krok 1-4](/assets/eskadra-bielik-misja1_04_krok_01.png)
+
+  * W polu **Konto rozliczeniowe** pojawi się informacja o treści **Google Cloud Platform Trial Billing...** oznacza to, że środki zostały aktywowane na Twoim koncie @gmail.com oraz konto bilingowe zostało poprawnie aktywowane bez konieczności podawania karty kredytowej - masz środki na dalszą część warsztatu.
+
+    ![Krok 1-5](/assets/eskadra-bielik-misja1_05_krok_01.png)
   
   </details>
 
