@@ -158,17 +158,17 @@ Przykładowy kod źródłowy pozwalający na:
   
   - Kliknij w ikonkę terminala CLI: ![Ikona terminala CLI](/assets/eskadra-bielik-misja1_01_krok_03_ikona_terminala.png)
 
-      ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_03.png)
+      ![Krok 3-1](/assets/eskadra-bielik-misja1_01_krok_03.png)
 
   2 Po uruchomieniu terminala:
   
   - Kliknij w przycisk: <ins>Autoryzuj</ins>
 
-    ![Krok 2-9](/assets/eskadra-bielik-misja1_02_krok_03.png)
+    ![Krok 3-2](/assets/eskadra-bielik-misja1_02_krok_03.png)
 
   3 Terminal CLI poprawnie uruchomiony
 
-  ![Krok 2-9](/assets/eskadra-bielik-misja1_03_krok_03.png)
+  ![Krok 3-3](/assets/eskadra-bielik-misja1_03_krok_03.png)
 
   </details>
 
@@ -182,6 +182,10 @@ Przykładowy kod źródłowy pozwalający na:
    git clone https://github.com/avedave/eskadra-bielik-misja1
    cd eskadra-bielik-misja1
   ```
+
+  - Wynik poprawnie wykonanego kroku (repozytorium cały czas żyje, więc wartości mogą być prezentowane inne):
+    ![Krok 4-1](/assets/eskadra-bielik-misja1_01_krok_04.png)
+
   </details>
   
   <details>
