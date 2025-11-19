@@ -209,7 +209,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   **W tym kroku uzupełnisz identyfikator warsztatów. Pozostałe parametry są już wstępnie skonfigurowane.**
 
-  1. Otwórz plik `.env` w edytorze Cloud Shell, wpisując w terminalu poniższe polecenie:
+  1. Otwórz plik `.env` w edytorze Cloud Shell, kopiując w terminalu poniższe polecenie:
      ```bash
      cloudshell edit-file .env
      ```
@@ -232,45 +232,25 @@ Przykładowy kod źródłowy pozwalający na:
   > *   `BIELIK_SERVICE_NAME` – Nazwa usługi w Cloud Run.
   > *   `BIELIK_MODEL_NAME` – Wersja modelu Bielik (domyślnie: `v3.0-instruct:Q8_0`).
 
-  [!IMPORTANT]
-  **Zmiana wersji modelu**
-  Jeżeli zdecydujesz się zmienić `BIELIK_MODEL_NAME` na inną wersję niż domyślna, pamiętaj, aby zaktualizować tę informację również w pliku `ollama-bielik/Dockerfile`:
+  </details>
+
+  > [!IMPORTANT]
+  > **Zmiana wersji modelu**
+  > Jeżeli zdecydujesz się zmienić `BIELIK_MODEL_NAME` na inną wersję niż domyślna, pamiętaj, aby zaktualizować tę informację również w pliku `ollama-bielik/Dockerfile`:
   
   ```dockerfile
   ENV MODEL SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0
   ```
 
-  </details>
-
-7. Zaktualizuj odpowiednie na tym etapie zmienne środowiskowe w pliku `.env`     
-      * `BIELIK_EVENT_ID`- Identyfikator warsztatów zgodny z kodem użytym w OnRamp Credits
-      * `GOOGLE_CLOUD_LOCATION`- zmienną definiującą region Google Cloud
-      * `BIELIK_SERVICE_NAME` - domyślną nazwę dla usługi gdzie uruchomimy Bielika
-      * `BIELIK_MODEL_NAME` - wersję Bielika z której będziemy korzystać 
-
->[!TIP]
->W terminalu `Cloud Shell` dostępny jest edytor po wybraniu opcji *Open Editor*
-
-   ```bash
-   BIELIK_EVENT_ID="<IDENTYFIKATOR>"
-   GOOGLE_CLOUD_LOCATION="europe-west1"  # Europe (Belgium)
-   BIELIK_SERVICE_NAME="ollama-bielik-v3"
-   BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
-   ```
->[!IMPORTANT]
->Jeżeli zmieniasz w `BIELIK_MODEL_NAME` domyślny model Bielika na inną wersję, to zaktualizuj tę informację również w pliku `ollama-bielik/Dockerfile`
-
-   ```dockerfile
-   ENV MODEL SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0
-   ```
-
-8. Wczytaj zmienne środowiskowe korzystając z podręcznego skryptu
+  <details>
+  
+  <summary>Krok 7: Wczytaj zmienne środowiskowe korzystając z podręcznego skryptu</summary>
 
    ```bash
    source reload-env.sh
    ```
 
-
+  </details>
 
 ## 2. Własna instancja Bielika
 
