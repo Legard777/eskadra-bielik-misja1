@@ -221,14 +221,20 @@ Przykładowy kod źródłowy pozwalający na:
 
   2. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID`:
 
-  - Usuń znak "#", aby zmienna była widoczna
+  - Usuń znak **#**, aby zmienna była widoczna
+
+    ![Krok 6-2](/assets/eskadra-bielik-misja1_02_krok_06.png)
   
   - Wpisz swój kod (zgodny z OnRamp Credits) podany przez trenera podczas warsztatów.
-     
+    - Zamień tekst **<IDENTYFIKATOR>** na podany przez trenera
+    - Przykład prawidłowej zmiany dla fikcyjnego kodu przedstawiony jest poniżej
+    
+    ![Krok 6-3](/assets/eskadra-bielik-misja1_03_krok_06.png)
+    
   - Twój plik powinien wyglądać następująco:
     
     ```bash
-    BIELIK_EVENT_ID="<TWOJ_IDENTYFIKATOR>"
+    BIELIK_EVENT_ID="<IDENTYFIKATOR>"
     GOOGLE_CLOUD_LOCATION="europe-west1"
     BIELIK_SERVICE_NAME="ollama-bielik-v3"
     BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
