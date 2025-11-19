@@ -8,7 +8,7 @@ Przykładowy kod źródłowy pozwalający na:
 * Uruchomienie obu powyższych serwisów na [Cloud Run](https://cloud.google.com/run?hl=en)
 
 
-## 1. Przygotowanie projektu Google Cloud
+## 1. Przygotowanie projektu Google Cloud Platform
 
 ### Uzyskaj kredyt Cloud **OnRamp** i skonfiguruj płatności w projekcie Google Cloud Platform
 
