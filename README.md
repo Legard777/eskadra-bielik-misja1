@@ -198,7 +198,9 @@ Przykładowy kod źródłowy pozwalający na:
    mv .env.sample .env
    ls -la .env
    ```
-
+  - Wynik poprawnie wykonanego kroku:
+    ![Krok 5-1](/assets/eskadra-bielik-misja1_01_krok_05.png)
+    
   </details>
 
 7. Zaktualizuj odpowiednie na tym etapie zmienne środowiskowe w pliku `.env`     
