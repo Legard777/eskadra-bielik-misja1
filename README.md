@@ -413,7 +413,7 @@ Przykładowy kod źródłowy pozwalający na:
     }
     ```
    - Jak to rozumieć...:
-    # 🦅 SpeakLeash / Bielik 4.5B v3.0 Instruct
+    #### 🦅 SpeakLeash / Bielik 4.5B v3.0 Instruct
   
     > **Wersja:** `Q8_0` (High Quality) &nbsp;|&nbsp; **Rodzina:** `Llama` &nbsp;|&nbsp; **Parametry:** `4.8B`
     
@@ -425,6 +425,7 @@ Przykładowy kod źródłowy pozwalający na:
     `........`
 
 * Wyślij zapytanie przez API
+
    ```bash
    curl "${OLLAMA_API_BASE}/api/generate" -d "{
       \"model\": \"$BIELIK_MODEL_NAME\",
@@ -433,8 +434,60 @@ Przykładowy kod źródłowy pozwalający na:
    }"
    ```
 
+   - Uruchom 2-3 razy i zobacz jaką uzyskasz odpowiedź
 
+   - Poniżej przykładowa odpowiedź (Ty możesz mieć inną...):
 
+    ```json
+    {
+      "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+      "created_at": "......",
+      "response": "Smok wawelski został zabity przez szewca Skubę, który podrzucił mu barana wypchanego siarką i prochem. Gdy smok połknął baranka, wybuchł i zabił potwora.",
+      "done": true,
+      "done_reason": "stop",
+      "context": [
+        1, 31981, 31957, 11308, 102, 25726, 336, 102, 2910, 31957, 31977, 6583,
+        31894, 31981, 31957, 6788, 102, 25726, 336, 102, 2910, 31957, 31977, 20,
+        17, 20, 17, 31037, 17218, 6871, 298, 787, 18058, 632, 31956, 31981,
+        31957, 27399, 31897, 102, 2910, 31957, 31977, 31981, 31957, 11308, 102,
+        25726, 336, 102, 2910, 31957, 31977, 14550, 23924, 507, 31981, 31957,
+        6788, 102, 25726, 336, 102, 2910, 31957, 31977, 20, 17, 20, 17, 31926,
+        434, 31900, 787, 18058, 423, 1109, 3332, 339, 481, 937, 16243, 10170,
+        1279, 31909, 493, 392, 13198, 555, 17494, 268, 3585, 6193, 365, 27062,
+        704, 285, 884, 23257, 31917, 1645, 6871, 31900, 3174, 3479, 17494,
+        2652, 31909, 6320, 31907, 285, 17218, 19153, 31888, 31917
+      ],
+      "total_duration": 10994891361,
+      "load_duration": 64652723,
+      "prompt_eval_count": 71,
+      "prompt_eval_duration": 231194690,
+      "eval_count": 54,
+      "eval_duration": 10674966594
+    }
+    ```
+
+  - Wyjaśnienie...
+
+    **Model:** `SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0`
+    **Status:** ✅ Zakończono pomyślnie (Reason: `stop`)
+    
+    ### 📝 Odpowiedź modelu:
+    > Smok wawelski został zabity przez szewca Skubę, który podrzucił mu barana wypchanego siarką i prochem. Gdy smok połknął baranka, wybuchł i zabił potwora.
+    
+    ### ⚡ Statystyki wydajności
+    
+    Poniższa tabela przedstawia szczegółowe czasy i prędkość generowania odpowiedzi (przeliczone z nanosekund).
+    
+    | Metryka | Wartość | Opis |
+    | :--- | :--- | :--- |
+    | **Całkowity czas** | **10.99 s** | Czas od zapytania do końca odpowiedzi. |
+    | **Czas ładowania** | 0.06 s | Czas wczytania modelu do pamięci. |
+    | **Przetwarzanie promptu** | 0.23 s | Czas "zrozumienia" Twojego pytania. |
+    | **Generowanie odp.** | 10.67 s | Czas pisania odpowiedzi przez AI. |
+    | **Liczba tokenów (we)** | 71 | Długość Twojego zapytania (prompt). |
+    | **Liczba tokenów (wy)** | 54 | Długość odpowiedzi modelu. |
+    | **Prędkość (TPS)** | **~5.06 t/s** | Średnia prędkość generowania (tokens per second). |
+    
 ## 3. Konfiguracja systemów agentowych ADK
 
 1. Skonfiguruj swój własny klucz Gemini API
