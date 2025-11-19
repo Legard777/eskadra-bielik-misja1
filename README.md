@@ -172,11 +172,18 @@ Przykładowy kod źródłowy pozwalający na:
 
   </details>
 
-5. Sklonuj repozytorium z przykładowym kodem i przejdź do nowoutworzonego katalogu
-   ```bash
+  <details>
+  
+  <summary>Krok 4: Sklonuj repozytorium z przykładowym kodem i przejdź do nowo utworzonego katalogu</summary>
+
+  1 Skopiuj poniższy kod do terminala CLI i naciśnij na klawaiturze klawisz ENTER
+
+  ```bash
    git clone https://github.com/avedave/eskadra-bielik-misja1
    cd eskadra-bielik-misja1
-   ```
+  ```
+  </details>
+  
 
 6. Zmień nazwę pliku `.env.sample` na `.env`
    ```bash
