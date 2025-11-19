@@ -176,7 +176,7 @@ Przykładowy kod źródłowy pozwalający na:
   
   <summary>Krok 4: Sklonuj repozytorium z przykładowym kodem i przejdź do nowo utworzonego katalogu</summary>
 
-  1 Skopiuj poniższy kod do terminala CLI i naciśnij na klawaiturze klawisz ENTER
+  1 Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawaiturze klawisz ENTER
 
   ```bash
    git clone https://github.com/avedave/eskadra-bielik-misja1
@@ -184,11 +184,17 @@ Przykładowy kod źródłowy pozwalający na:
   ```
   </details>
   
+  <details>
+  
+  <summary>Krok 5: Zmień nazwę pliku `.env.sample` na `.env`</summary>
 
-6. Zmień nazwę pliku `.env.sample` na `.env`
+  1 Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawaiturze klawisz ENTER
+
    ```bash
    mv .env.sample .env
    ```
+
+  </details>
 
 7. Zaktualizuj odpowiednie na tym etapie zmienne środowiskowe w pliku `.env`     
       * `BIELIK_EVENT_ID`- Identyfikator warsztatów zgodny z kodem użytym w OnRamp Credits
