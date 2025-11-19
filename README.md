@@ -71,7 +71,30 @@ Przykładowy kod źródłowy pozwalający na:
   <details>
   
   <summary>Krok 2:Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
+
+  * Powróć na główny ekran Google Cloud Platform.
+  * Kliknij w logo: <ins>Google Cloud</ins>
+  * Kliknij w pozycję z napisem: <ins>Wybierz projekt</ins>
+
+    ![Krok 2-1](/assets/eskadra-bielik-misja1_01_krok_02.png)
+
+  * Po wybraniu pojawi się okienko z informacją o projektach
+  * Kliknij w przycisk: <ins>Nowy projekt</ins>
   
+    ![Krok 2-1](/assets/eskadra-bielik-misja1_02_krok_02.png)
+
+  * Pojawi się formularz z informacją o nowym projekcie, gdzie nadamy własną nazwę projektu
+
+    ![Krok 3-1](/assets/eskadra-bielik-misja1_03_krok_02.png)
+
+  * W pozycji: _Nazwa projektu_ podajemy naszą własną nazwę:
+    ```
+    eskadra-bielik
+    ```
+  * Klikamy przycisk: <ins>Utwórz</ins>
+
+    ![Krok 4-1](/assets/eskadra-bielik-misja1_04_krok_02.png)
+
   </details>
 
 4. Otwórz Cloud Shell ([dokumentacja](https://cloud.google.com/shell/docs))
