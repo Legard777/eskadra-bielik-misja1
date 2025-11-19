@@ -203,6 +203,45 @@ Przykładowy kod źródłowy pozwalający na:
     
   </details>
 
+  <details>
+  
+  <summary>Krok 6: Skonfiguruj zmienne środowiskowe</summary>
+
+  **W tym kroku uzupełnisz identyfikator warsztatów. Pozostałe parametry są już wstępnie skonfigurowane.**
+
+  1. Otwórz plik `.env` w edytorze Cloud Shell, wpisując w terminalu poniższe polecenie:
+     ```bash
+     cloudshell edit-file .env
+     ```
+
+  2. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID` i wpisz swój kod (zgodny z OnRamp Credits) podany przez trenera podczas warsztatów.
+     
+     Twój plik powinien wyglądać następująco:
+     ```bash
+     BIELIK_EVENT_ID="<TWOJ_IDENTYFIKATOR>"
+     GOOGLE_CLOUD_LOCATION="europe-west1"
+     BIELIK_SERVICE_NAME="ollama-bielik-v3"
+     BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
+     ```
+
+  3. Zapisz plik (File > Save lub skrót `Ctrl+S`).
+  
+  > **Opis zmiennych (informacyjnie):**
+  > *   `BIELIK_EVENT_ID` – **(Do edycji)** Unikalny identyfikator warsztatów podany przez trenera podczas warsztatów.
+  > *   `GOOGLE_CLOUD_LOCATION` – Region Google Cloud (domyślnie: `europe-west1`, Belgia).
+  > *   `BIELIK_SERVICE_NAME` – Nazwa usługi w Cloud Run.
+  > *   `BIELIK_MODEL_NAME` – Wersja modelu Bielik (domyślnie: `v3.0-instruct:Q8_0`).
+
+  [!IMPORTANT]
+  **Zmiana wersji modelu**
+  Jeżeli zdecydujesz się zmienić `BIELIK_MODEL_NAME` na inną wersję niż domyślna, pamiętaj, aby zaktualizować tę informację również w pliku `ollama-bielik/Dockerfile`:
+  
+  ```dockerfile
+  ENV MODEL SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0
+  ```
+
+  </details>
+
 7. Zaktualizuj odpowiednie na tym etapie zmienne środowiskowe w pliku `.env`     
       * `BIELIK_EVENT_ID`- Identyfikator warsztatów zgodny z kodem użytym w OnRamp Credits
       * `GOOGLE_CLOUD_LOCATION`- zmienną definiującą region Google Cloud
