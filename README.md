@@ -210,21 +210,27 @@ Przykładowy kod źródłowy pozwalający na:
   **W tym kroku uzupełnisz identyfikator warsztatów. Pozostałe parametry są już wstępnie skonfigurowane.**
 
   1. Otwórz plik `.env` w edytorze Cloud Shell, kopiując w terminalu poniższe polecenie:
-     ```bash
-     cloudshell open-workspace . | cloudshell edit-file .env
-     ```
-
-  2. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID` i wpisz swój kod (zgodny z OnRamp Credits) podany przez trenera podczas warsztatów.
      
-     Twój plik powinien wyglądać następująco:
-     ```bash
-     BIELIK_EVENT_ID="<TWOJ_IDENTYFIKATOR>"
-     GOOGLE_CLOUD_LOCATION="europe-west1"
-     BIELIK_SERVICE_NAME="ollama-bielik-v3"
-     BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
-     ```
+   ```bash
+   cloudshell open-workspace . | cloudshell edit-file .env
+   ```
 
-  3. Zapisz plik (File > Save lub skrót `Ctrl+S`).
+  3. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID`:
+
+  - Usuń znak "#", aby zmienna była widoczna
+  
+  - Wpisz swój kod (zgodny z OnRamp Credits) podany przez trenera podczas warsztatów.
+     
+  - Twój plik powinien wyglądać następująco:
+    
+    ```bash
+    BIELIK_EVENT_ID="<TWOJ_IDENTYFIKATOR>"
+    GOOGLE_CLOUD_LOCATION="europe-west1"
+    BIELIK_SERVICE_NAME="ollama-bielik-v3"
+    BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
+    ```
+
+  4. Zapisz plik (File > Save lub skrót `Ctrl+S`).
   
   > **Opis zmiennych (informacyjnie):**
   > *   `BIELIK_EVENT_ID` – **(Do edycji)** Unikalny identyfikator warsztatów podany przez trenera podczas warsztatów.
