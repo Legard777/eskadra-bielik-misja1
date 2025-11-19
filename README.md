@@ -58,7 +58,13 @@ Przykładowy kod źródłowy pozwalający na:
   * W polu _Konto rozliczeniowe_ nowa nazwa została poprawnie zmieniona. 
 
     ![Krok 1-8](/assets/eskadra-bielik-misja1_08_krok_01.png)
-    
+
+  * W celu weryfikacji przyznanych środków wybierz pozycje: _Środki_ i zobacz w tabeli przyznane środki kolumnę o tytule **Stan**, która wskazuje na **Dostępny**. 
+
+    ![Krok 1-9](/assets/eskadra-bielik-misja1_09_krok_01.png)
+
+  * Gratulacje, możesz przejść do następnego kroku warsztatu.
+
   </details>
 
 2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
