@@ -262,6 +262,10 @@ Przykładowy kod źródłowy pozwalający na:
   
   <summary>Krok 7: Wczytaj zmienne środowiskowe korzystając z podręcznego skryptu</summary>
 
+  1 Kliknij w przycisk z napisem: <ins>Otwórz terminal</ins>, aby powrócić do linii komend
+
+  2 Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER
+
    ```bash
    source reload-env.sh
    ```
