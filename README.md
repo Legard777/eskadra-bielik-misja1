@@ -10,7 +10,7 @@ Przykładowy kod źródłowy pozwalający na:
 
 ## 1. Przygotowanie projektu Google Cloud
 
-1. Uzyskaj kredyt Cloud **OnRamp**, lub skonfiguruj płatności w projekcie Google Cloud
+### Uzyskaj kredyt Cloud **OnRamp** i skonfiguruj płatności w projekcie Google Cloud Platform
 
   > [!NOTE]
   > Nie potrzebujesz karty kredytowej ani płatności — otrzymasz 10 dolarów darmowych środków. Zajmie Ci to mniej niż 2 minuty, wystarczy wpisać swoje imię i nazwisko oraz zaakceptować środki.
@@ -68,11 +68,11 @@ Przykładowy kod źródłowy pozwalający na:
 
   </details>
 
-2. Przejdź do **Google Cloud Console**: [console.cloud.google.com](https://console.cloud.google.com)
-
-3. Stwórz nowy projekt Google Cloud i wybierz go aby był aktywny
->[!TIP]
->Możesz sprawdzić dostępność kredytów OnRamp wybierając z menu po lewej stronie: Billing / Credits
+  <details>
+  
+  <summary>Krok 2:Stwórz nowy projekt Google Cloud Platform i powiąż z utworzonym kontem biligowym</summary>
+  
+  </details>
 
 4. Otwórz Cloud Shell ([dokumentacja](https://cloud.google.com/shell/docs))
 
