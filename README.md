@@ -48,7 +48,7 @@ Przykładowy kod źródłowy pozwalający na:
 
     ![Krok 1-6](/assets/eskadra-bielik-misja1_06_krok_01.png)
 
-  * Kliknij w ikonkę: pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
+  * Kliknij w ikonkę: _Edycji_ ![Ikona Edycji](/assets/eskadra-bielik-misja1_06_krok_01_ikona_edycji.png) pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
     ```
     eskadra-bielik-misja1
     ```
