@@ -289,6 +289,12 @@ Przykładowy kod źródłowy pozwalający na:
 
 2. Poniższa komenda stworzy nową usługę w Cloud Run o nazwie takiej jak wartość zmiennej `$BIELIK_SERVICE_NAME`. Na podstawie definicji w `ollama-bielik/Dockerfile` nardzędzie `gcloud` stworzy odpowiedni kontener, skonfiguruje usługę Ollama oraz wczyta odpowiednią wersję modelu Bielik.
 
+> [!CAUTION]
+> Tworzenie modelu może potrwać od 8-10 min.
+
+> [!WARNING]
+> Twoja sesja terminala musi być aktywna !
+
 - Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
 
    ```bash
