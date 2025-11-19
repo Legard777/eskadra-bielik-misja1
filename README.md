@@ -198,6 +198,7 @@ Przykładowy kod źródłowy pozwalający na:
    mv .env.sample .env
    ls -la .env
    ```
+
   - Wynik poprawnie wykonanego kroku:
     ![Krok 5-1](/assets/eskadra-bielik-misja1_01_krok_05.png)
     
@@ -215,7 +216,10 @@ Przykładowy kod źródłowy pozwalający na:
    cloudshell open-workspace . | cloudshell edit-file .env
    ```
 
-  3. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID`:
+  - Wynik poprawnie wykonanego kroku:
+    ![Krok 6-1](/assets/eskadra-bielik-misja1_01_krok_06.png)
+
+  2. W otwartym edytorze znajdź zmienną `BIELIK_EVENT_ID`:
 
   - Usuń znak "#", aby zmienna była widoczna
   
@@ -230,7 +234,7 @@ Przykładowy kod źródłowy pozwalający na:
     BIELIK_MODEL_NAME="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0"
     ```
 
-  4. Zapisz plik (File > Save lub skrót `Ctrl+S`).
+  3. Zapisz plik (File > Save lub skrót `Ctrl+S`).
   
   > **Opis zmiennych (informacyjnie):**
   > *   `BIELIK_EVENT_ID` – **(Do edycji)** Unikalny identyfikator warsztatów podany przez trenera podczas warsztatów.
