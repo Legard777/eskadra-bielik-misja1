@@ -55,7 +55,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   7 Kliknij w ikonkę: _Edycji_ ![Ikona Edycji](/assets/eskadra-bielik-misja1_06_krok_01_ikona_edycji.png) pojawi się okno z informacją: _Zmień nazwę konta rozliczeniowego_ w polu *Nazwa* podaj:
 
-  ```
+  ```bash
   eskadra-bielik-misja1
   ```
   
@@ -99,7 +99,7 @@ Przykładowy kod źródłowy pozwalający na:
 
   4 W pozycji: _Nazwa projektu_ podajemy naszą własną nazwę:
   
-  ```
+  ```bash
   eskadra-bielik
   ```
 
@@ -283,6 +283,7 @@ Przykładowy kod źródłowy pozwalający na:
 ## 2. Własna instancja Bielika na Google Cloud Platform
 
 1. Ustal domyślne konto serwisowe dla wybranego projektu `default service account`
+   
    ```bash
    gcloud builds get-default-service-account
    ```
@@ -375,7 +376,6 @@ Przykładowy kod źródłowy pozwalający na:
    ```bash
    source reload-env.sh
    ```
-
 
 > [!TIP]
 > Czy to faktycznie działa?
@@ -491,29 +491,59 @@ Przykładowy kod źródłowy pozwalający na:
 ## 3. Konfiguracja systemów agentowych ADK
 
 1. Skonfiguruj swój własny klucz Gemini API
-   *   Stwórz lub skopiuj istniejący Gemini API key z [Google AI Studio](https://ai.dev).
-   *   Dodaj wartość klucza ze swojego Gemini API key jako wartość zmiennej `GOOGLE_API_KEY` w pliku `.env`
+
+   * Stwórz lub skopiuj istniejący Gemini API key z [Google AI Studio](https://ai.dev).
+     
+     1 Wybierz pozycję: <ins>Get API Key</ins>
+
+     2 Wybierz pozycję: <ins>Project</ins>
+
+     3 Kliknij w przycisk: <ins>+ Create a new project</ins>
+
+     4 Podaj nazwę swojego projektu w pozycji: *Name your project*:
+     
+       ```bash
+       eskadra-bielik-misja1
+       ```
+
+     5 Kliknij w przycisk: <ins>Create project</ins>
+
+     6 Kliknij w kolumnie *Keys* przy nazwie <ins>eskadra-bielik-misja1</ins>
+     
+     7 Kliknij w przycisk: <ins>Create API key</ins>
+
+     8 Wybierz w pozycji: <ins>Choose an imported project</ins> utworzony projekt o nazwie *eskadra-bielik-misja1*
+
+     9 Podaj w pozycji: <ins>Name you key</ins> nazwę swojego klucza *eskadra-bielik-misja1-klucz-1*
+
+     10 Kliknij w przycisk: <ins>Create key</ins>, aby utworzyć klucz
+
+     11 Kliknij w nowo utworzony klucz. Pojawi się okienko z informacją o nowym kluczu: <ins>API key details</ins>
+     
+     12 Kliknij w przycisk: <ins>Copy key</ins>, aby skopiować klucz do schowka
+
+   * Dodaj wartość klucza ze swojego Gemini API key jako wartość zmiennej `GOOGLE_API_KEY` w pliku `.env`
    ```bash
    GOOGLE_API_KEY=TWÓJ_KLUCZ
    ```
-2. Wczytaj zmienne środowiskowe ponownie
+3. Wczytaj zmienne środowiskowe ponownie
    ```bash
    source reload-env.sh
    ```
-3. Przejdź do katalogu z agentami
+4. Przejdź do katalogu z agentami
 
    ```bash
    cd adk-agents
    ```
    
-4. Stwórz i aktywuj wirtualne środowisko Python
+5. Stwórz i aktywuj wirtualne środowisko Python
 
    ```bash
    python -m venv .venv
    source .venv/bin/activate
    ```
    
-5. Zainstaluj wymagane komponenty
+6. Zainstaluj wymagane komponenty
 
    ```bash
    pip install -r requirements.txt
