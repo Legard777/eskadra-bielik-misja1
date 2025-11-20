@@ -431,7 +431,7 @@ Przykładowy kod źródłowy pozwalający na:
       \"model\": \"$BIELIK_MODEL_NAME\",
       \"prompt\": \"Kto zabił smoka wawelskiego?\",
       \"stream\": false
-   }"
+   }" | jq .response
    ```
 
    - Uruchom 2-3 razy i zobacz jaką uzyskasz odpowiedź
