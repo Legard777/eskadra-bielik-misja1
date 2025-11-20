@@ -386,7 +386,7 @@ Przykładowy kod źródłowy pozwalający na:
 * Sprawdź czy otwierając URL w przeglądarce zobaczysz informację: `Ollama is running`
 * Sprawdź przez API jakie modele są dostępne lokalnie na serwerze Ollama
    ```bash
-   curl "${OLLAMA_API_BASE}/api/tags"
+   curl "${OLLAMA_API_BASE}/api/tags" | jq .
    ```
    - odpowiedź powinna wyglądać jak poniżej:
     ```json
