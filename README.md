@@ -584,7 +584,7 @@ graph TD
 2. Uruchom agenta w konsoli **Cloud Shell** i rozpocznij interakcję
 
    ```bash
-    adk run content_creator/
+   adk run content_creator/
    ```
 
 
