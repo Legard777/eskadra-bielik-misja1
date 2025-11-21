@@ -654,3 +654,83 @@ graph TD
 
 2. Narzędzie `gcloud` stworzy kontener na podstawie konfiguracji zawartej w `adk-agents/Dockerfile` i uruchomi usługę w Cloud Run, podając URL pod którym serwis będzie dostępny
 3. Wywołaj otrzymany URL w przeglądarce WWW aby mieć dostęp do środowiska ADK Web
+
+## 7. Zarządzanie bezpieczeństwem usług Cloud Run
+
+W tej sekcji znajdziesz polecenia pozwalające na zarządzanie dostępem do Twoich usług Cloud Run (`ollama-bielik-v3` oraz `adk-agents`). Możesz zablokować dostęp publiczny (wymusić autoryzację IAM) lub go przywrócić.
+
+### 7.1 Wymuszenie autoryzacji (Blokada dostępu publicznego)
+
+Poniższe polecenia usuwają uprawnienie `roles/run.invoker` dla grupy `allUsers`, co sprawia, że usługi stają się prywatne i wymagają uwierzytelnienia (IAM).
+
+```bash
+# Blokada dla usługi Bielik
+gcloud run services remove-iam-policy-binding $BIELIK_SERVICE_NAME \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --member="allUsers" \
+    --role="roles/run.invoker"
+
+# Blokada dla usługi ADK Agents
+gcloud run services remove-iam-policy-binding adk-agents \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --member="allUsers" \
+    --role="roles/run.invoker"
+```
+
+### 7.2 Zezwolenie na dostęp publiczny (Dla wszystkich)
+
+Poniższe polecenia nadają uprawnienie `roles/run.invoker` dla grupy `allUsers`, co sprawia, że usługi są dostępne publicznie w internecie bez logowania.
+
+```bash
+# Dostęp publiczny dla usługi Bielik
+gcloud run services add-iam-policy-binding $BIELIK_SERVICE_NAME \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --member="allUsers" \
+    --role="roles/run.invoker"
+
+# Dostęp publiczny dla usługi ADK Agents
+gcloud run services add-iam-policy-binding adk-agents \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --member="allUsers" \
+    --role="roles/run.invoker"
+```
+
+### 7.3 Weryfikacja ustawień bezpieczeństwa
+
+Uruchom poniższy skrypt, aby sprawdzić aktualne ustawienia dostępu dla Twoich usług. Jeśli w wynikach zobaczysz `allUsers` z rolą `roles/run.invoker`, oznacza to, że usługa jest publiczna. Brak tego wpisu oznacza, że usługa jest prywatna.
+
+```bash
+echo "--- Status usługi: $BIELIK_SERVICE_NAME ---"
+gcloud run services get-iam-policy $BIELIK_SERVICE_NAME \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --flatten="bindings[].members" \
+    --format="table(bindings.role)" \
+    --filter="bindings.members:allUsers"
+
+echo -e "\n--- Status usługi: adk-agents ---"
+gcloud run services get-iam-policy adk-agents \
+    --region=$GOOGLE_CLOUD_LOCATION \
+    --flatten="bindings[].members" \
+    --format="table(bindings.role)" \
+    --filter="bindings.members:allUsers"
+```
+Jeśli tabela jest pusta, usługa jest **PRYWATNA** (bezpieczna).
+Jeśli widzisz `roles/run.invoker`, usługa jest **PUBLICZNA**.
+
+#### 7.3.1 Rezultat dla **PRYWATNEJ** usługi:
+```bash
+--- Status usługi: ollama-bielik-v3 ---
+WARNING: The following filter keys were not present in any resource : bindings.members
+
+--- Status usługi: adk-agents ---
+WARNING: The following filter keys were not present in any resource : bindings.members
+```
+
+#### 7.3.2 Rezultat dla **PUBLICZNEJ** usługi:
+```bash
+--- Status usługi: ollama-bielik-v3 ---
+ROLE: roles/run.invoker
+
+--- Status usługi: adk-agents ---
+ROLE: roles/run.invoker
+```
