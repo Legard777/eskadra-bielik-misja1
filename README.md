@@ -734,3 +734,42 @@ ROLE: roles/run.invoker
 --- Status usługi: adk-agents ---
 ROLE: roles/run.invoker
 ```
+
+## 8. Zarządzanie kosztami - czyszczenie Artifact Registry
+
+W tej sekcji znajdziesz skrypt, który pozwoli Ci usunąć wszystkie obrazy kontenerów z Artifact Registry, aby nie generowały kosztów. Skrypt usuwa obrazy dla usług `adk-agents` oraz `ollama-bielik-v3`, pozostawiając strukturę repozytorium nienaruszoną.
+
+> [!IMPORTANT]
+> Usługi Cloud Run nadal będą działać :)
+
+```bash
+# Ustawienie zmiennych
+PROJECT_ID=$(gcloud config get-value project)
+REPO="cloud-run-source-deploy"
+IMAGE_PATH="$GOOGLE_CLOUD_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPO"
+
+# Pokazanie zmiennych
+echo "PROJECT_ID: $PROJECT_ID"
+echo "REPO: $REPO"
+echo "IMAGE_PATH: $IMAGE_PATH"
+
+# Funkcja czyszcząca obrazy dla danej nazwy
+clean_images() {
+  IMAGE_NAME=$1
+  FULL_IMAGE_PATH="$IMAGE_PATH/$IMAGE_NAME"
+  
+  echo "Czyszczenie obrazów dla: $IMAGE_NAME"
+  
+  # Pobierz listę digestów i usuń każdy z nich
+  gcloud artifacts docker images list "$FULL_IMAGE_PATH" \
+    --format="value(DIGEST)" \
+    --sort-by="~CREATE_TIME" | while read -r DIGEST; do
+      echo "Usuwanie: $DIGEST"
+      gcloud artifacts docker images delete "$FULL_IMAGE_PATH@$DIGEST" --delete-tags --quiet
+  done
+}
+
+# Uruchomienie czyszczenia
+clean_images "adk-agents"
+clean_images "$BIELIK_SERVICE_NAME"
+```
