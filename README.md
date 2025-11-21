@@ -7,6 +7,57 @@ Przykładowy kod źródłowy pozwalający na:
 
 * Uruchomienie obu powyższych serwisów na [Cloud Run](https://cloud.google.com/run?hl=en)
 
+## Architektura rozwiązania
+
+Poniższy diagram przedstawia architekturę rozwiązania, które będziemy budować podczas warsztatów. 
+
+> [!NOTE]
+> Warto zaznaczyć, że komponenty takie jak **ADK**, **Ollama** oraz model **Bielik** mogą być z powodzeniem uruchamiane lokalnie na Twoim komputerze (Local Environment). Jednak na potrzeby warsztatu, aby zapewnić wszystkim uczestnikom dostęp do odpowiedniej mocy obliczeniowej (GPU), wykorzystamy środowisko chmurowe **Google Cloud Platform** i usługę **Cloud Run**.
+
+```mermaid
+graph TD
+    subgraph Local_Environment ["💻 Local Environment (Twój komputer)"]
+        style Local_Environment fill:#e6f3ff,stroke:#333,stroke-width:2px
+        User[("👤 Użytkownik")]
+        Browser["🌐 Przeglądarka WWW"]
+        Terminal["⌨️ Terminal"]
+    end
+
+    subgraph GCP_Workshop ["☁️ Google Cloud Platform (Warsztat)"]
+        style GCP_Workshop fill:#fff0e6,stroke:#333,stroke-width:2px
+        
+        subgraph Cloud_Run ["🚀 Cloud Run (Serverless)"]
+            style Cloud_Run fill:#e6ffe6,stroke:#333,stroke-width:2px
+            
+            ADK_Service["🤖 ADK Service<br/>(Agent Development Kit)"]
+            Ollama_Service["🦙 Ollama Service<br/>(Inference Engine)"]
+            
+            subgraph GPU_Acceleration ["⚡ GPU Acceleration"]
+                style GPU_Acceleration fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
+                Bielik_Model["🦅 Model Bielik<br/>(LLM)"]
+            end
+        end
+        
+        Artifact_Registry["📦 Artifact Registry<br/>(Docker Images)"]
+        Gemini_Model["✨ Gemini 2.5 Flash<br/>(Multimodal LLM)"]
+    end
+
+    User --> Browser
+    User --> Terminal
+    
+    Browser -- "HTTPS" --> ADK_Service
+    Terminal -- "gcloud CLI" --> Cloud_Run
+    
+    ADK_Service -- "API Call" --> Ollama_Service
+    ADK_Service -- "API Call" --> Gemini_Model
+    Ollama_Service -- "Load & Run" --> Bielik_Model
+    
+    Cloud_Run -. "Pull Images" .-> Artifact_Registry
+
+    linkStyle 3 stroke:#0066cc,stroke-width:2px;
+    linkStyle 4 stroke:#0066cc,stroke-width:2px;
+    linkStyle 5 stroke:#0066cc,stroke-width:2px;
+```
 
 ## 1. Przygotowanie projektu Google Cloud Platform
 
