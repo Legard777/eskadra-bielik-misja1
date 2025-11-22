@@ -235,7 +235,18 @@ graph TD
   ```
 
   - Wynik poprawnie wykonanego kroku (repozytorium cały czas żyje, więc wartości mogą być prezentowane inne):
-    ![Krok 4-1](/assets/eskadra-bielik-misja1_01_krok_04.png)
+    ```bash
+    ......@cloudshell:~/test (eskadra-bielik-......)$  git clone https://github.com/Legard777/eskadra-bielik-misja1
+     cd eskadra-bielik-misja1
+    Cloning into 'eskadra-bielik-misja1'...
+    remote: Enumerating objects: 337, done.
+    remote: Counting objects: 100% (85/85), done.
+    remote: Compressing objects: 100% (58/58), done.
+    remote: Total 337 (delta 75), reused 27 (delta 27), pack-reused 252 (from 2)
+    Receiving objects: 100% (337/337), 7.23 MiB | 28.68 MiB/s, done.
+    Resolving deltas: 100% (173/173), done.
+    ......@cloudshell:~/test/eskadra-bielik-misja1 (eskadra-bielik-......)$
+    ```
 
   </details>
   
