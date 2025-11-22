@@ -1,4 +1,4 @@
-# Eskadra Bielik Misja1 -- Biała Podlaska
+# Eskadra Bielika Misja1 -- Biała Podlaska
 
 ## Instrukcja certyfikacji
 
