@@ -17,7 +17,7 @@ echo -e "\n=== INFORMACJE O PROJEKCIE I USŁUGACH ===" && \
 echo "Projekt: $(gcloud config get-value project)" && \
 gcloud run services list \
   --filter="metadata.name:ollama-bielik-v3 OR metadata.name:adk-agents" \
-  --format="table(metadata.name,metadata.creationTimestamp,status.lastTransitionTime,metadata.labels)" && \
+  --format="table(metadata.name,status.url,metadata.creationTimestamp,status.lastTransitionTime,metadata.labels)" && \
 echo -e "\n=== STOP KOPIOWANIA TEKSTU ==="
 ```
 
@@ -28,6 +28,7 @@ Powyższa komenda wykonuje następujące czynności:
 *   Filtruje usługi Cloud Run, ograniczając wynik tylko do usług o nazwach `ollama-bielik-v3` oraz `adk-agents`.
 *   Prezentuje dane w formie tabeli zawierającej:
     *   **SERVICE**: Nazwa usługi.
+    *   **URL**: Adres URL usługi.
     *   **CREATION**: Data utworzenia usługi.
     *   **LAST DEPLOYED**: Data ostatniej modyfikacji (wdrożenia).
     *   **LABELS**: Etykiety przypisane do usługi.
