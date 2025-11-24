@@ -13,8 +13,7 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 >
 > Zobacz wideo, które pokazuje jak to należy zrobić
 
-<video src="LINK" controls="controls" style="max-width: 730px;"></video>
-![name](link)
+[![asciicast](/assets/eksadra_bielika_480.mov)](/assets/eksadra_bielika_480.mov)
 
 ```bash
 echo -e "\n=== START KOPIOWANIA TEKSTU ===" && \
