@@ -15,8 +15,6 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 
 https://github.com/user-attachments/assets/deab2a95-e498-4eb7-9f8f-be2f29393a76
 
-[![asciicast](/assets/eksadra_bielika_480.mov)](/assets/eksadra_bielika_480.mov)
-
 ```bash
 echo -e "\n=== START KOPIOWANIA TEKSTU ===" && \
 echo -e "\n=== INFORMACJE O PROJEKCIE I USŁUGACH ===" && \
