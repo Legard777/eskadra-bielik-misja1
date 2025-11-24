@@ -13,7 +13,7 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 >
 > Zobacz wideo, które pokazuje jak to należy zrobić
 
-[![asciicast](/assets/eksadra_bielika_480.mov)](/assets/eksadra_bielika_480.mov)
+https://github.com/user-attachments/assets/deab2a95-e498-4eb7-9f8f-be2f29393a76
 
 ```bash
 echo -e "\n=== START KOPIOWANIA TEKSTU ===" && \
