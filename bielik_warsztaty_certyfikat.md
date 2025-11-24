@@ -10,6 +10,11 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 
 > [!IMPORTANT]
 > Wynik komendy skopiuj do schowka i wklej do formularza certyfikacji.
+>
+> Zobacz wideo, które pokazuje jak to należy zrobić
+
+<video src="LINK" controls="controls" style="max-width: 730px;"></video>
+![name](link)
 
 ```bash
 echo -e "\n=== START KOPIOWANIA TEKSTU ===" && \
