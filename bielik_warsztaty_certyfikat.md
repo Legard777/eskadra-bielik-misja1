@@ -11,6 +11,8 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 > [!IMPORTANT]
 > Wynik komendy skopiuj do schowka i wklej do formularza certyfikacji.
 
+[![asciicast](/assets/eksadra_bielika_480.mov)](/assets/eksadra_bielika_480.mov)
+
 ```bash
 echo -e "\n=== START KOPIOWANIA TEKSTU ===" && \
 echo -e "\n=== INFORMACJE O PROJEKCIE I USŁUGACH ===" && \
