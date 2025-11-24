@@ -10,6 +10,10 @@ Skopiuj i wykonaj poniższą komendę w terminalu (Cloud Shell):
 
 > [!IMPORTANT]
 > Wynik komendy skopiuj do schowka i wklej do formularza certyfikacji.
+>
+> Zobacz wideo, które pokazuje jak to należy zrobić
+
+https://github.com/user-attachments/assets/deab2a95-e498-4eb7-9f8f-be2f29393a76
 
 [![asciicast](/assets/eksadra_bielika_480.mov)](/assets/eksadra_bielika_480.mov)
 
