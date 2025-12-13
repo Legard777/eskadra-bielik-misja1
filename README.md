@@ -268,7 +268,7 @@ graph TD
 
   <details>
   
-  <summary>Krok 6: Skonfiguruj zmienne środowiskowe</summary>
+  <summary><a name="krok-6">Krok 6: Skonfiguruj zmienne środowiskowe</a></summary>
 
   **W tym kroku uzupełnisz identyfikator warsztatów. Pozostałe parametry są już wstępnie skonfigurowane.**
 
@@ -361,13 +361,20 @@ graph TD
 > [!TIP]
 > Odpowiedz twierdząco, jeżeli system spyta o włączenie odpowiednich API oraz stworzenie rejestru artefaktów.
 
-- Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
+2.1 Skopiuj przygotowane komendy do terminala CLI i naciśnij na klawiaturze klawisz ENTER.
 
    ```bash
    gcloud run deploy $BIELIK_SERVICE_NAME --source ollama-bielik/ --region $GOOGLE_CLOUD_LOCATION --concurrency 7 --cpu 8 --set-env-vars OLLAMA_NUM_PARALLEL=4 --gpu 1 --gpu-type nvidia-l4 --max-instances 1 --memory 16Gi --allow-unauthenticated --no-cpu-throttling --no-gpu-zonal-redundancy --timeout 600 --labels dev-tutorial=codelab-dos-$BIELIK_EVENT_ID
    ```
 
-- Na zadane pytanie, odpowiedz **Y**.
+>[!TIP]
+>Alternatywnie, możesz uruchomić powyższą komendę korzystając ze skryptu `deploy-bielik.sh`
+
+   ```bash
+   source deploy-bielik.sh
+   ```
+
+2.2 Na zadane pytanie, odpowiedz **Y**.
   ```bash
   The following APIs are not enabled on project [eskadra-bielik-.....]:
         artifactregistry.googleapis.com
@@ -377,7 +384,7 @@ graph TD
   Do you want enable these APIs to continue (this will take a few minutes)? (Y/n)?  
   ```
 
-- Na kolejne zadane pytanie, odpowiedz **Y**.
+2.3 Na kolejne zadane pytanie, odpowiedz **Y**.
   ```bash
   Enabling APIs on project [eskadra-bielik-.....]...
   Operation "operations/............." finished successfully.
@@ -387,7 +394,7 @@ graph TD
   Do you want to continue (Y/n)? 
   ```
 
-- Poprawne wykonanie zakończy się poniższym komunikatem:
+2.4 Poprawne wykonanie zakończy się poniższym komunikatem:
 
   ```bash
   Building using Dockerfile and deploying container to Cloud Run service [ollama-bielik-v3] in project [eskadra-bielik-.....] region [europe-west1]
@@ -403,7 +410,7 @@ graph TD
   Service URL: https://ollama-bielik-v3-......europe-west1.run.app
   ```
 
-- Jeżeli pojawił się błąd z poniższą informacją:
+2.5 Jeżeli pojawił się błąd z poniższą informacją:
   
   ```bash
   Building using Dockerfile and deploying container to Cloud Run service [ollama-bielik-v3] in project [eskadra-bielik-.....] region [europe-west1] ERROR: (gcloud.run.deploy) spec.template.metadata.annotations[autoscaling.knative.dev/maxScale]: You do not have quota for using GPUs without zonal redundancy. Learn more about GPU zonal redundancy: g.co/cloudrun/gpu-redundancy-help
@@ -426,9 +433,12 @@ graph TD
    gcloud run services describe $BIELIK_SERVICE_NAME --region=$GOOGLE_CLOUD_LOCATION --format='value(status.url)'
    ```
 
-- Skopiuj uzyskany adres do "schowka"
+>[!TIP]
+>Odpowiedz twierdząco, jeżeli system spyta o włączenie odpowiednich API oraz stworzenie rejestru artefaktów
 
-- Wykonaj te same czynności co w **Kroku 6**
+3.1 Skopiuj uzyskany adres do "schowka"
+
+3.2 Wykonaj te same czynności co w [**1. Przygotowanie projektu Google Cloud Platform -> Kroku 6**](#krok-6)
   - Możesz też kliknąć bezpośrednio w przycisk: <ins>Otwórz edytor</ins>
   - Odnajdź pozycję **# OLLAMA_API_BASE=** (linia nr 27)
   - Usuń znak **#**
@@ -714,8 +724,16 @@ graph TD
 >[!CAUTION]
 >Flaga `--allow-unauthenticated` udostępnia usługę publicznie w internecie i każdy kto zna URL, może zaczać z niej korzystać. W środowisku produkcyjnym zazwyczaj trzeba tę flagę usunąć i odpowiednio skonfigurować reguły dostępu.
 
+>[!TIP]
+>Alternatywnie, możesz uruchomić powyższą komendę korzystając ze skryptu `deploy-adk-agents.sh`
+
+   ```bash
+   source deploy-adk-agents.sh
+   ```
+
 2. Narzędzie `gcloud` stworzy kontener na podstawie konfiguracji zawartej w `adk-agents/Dockerfile` i uruchomi usługę w Cloud Run, podając URL pod którym serwis będzie dostępny
-3. Wywołaj otrzymany URL w przeglądarce WWW aby mieć dostęp do środowiska ADK Web
+
+3. Wywołaj otrzymany URL w przeglądarce WWW aby mieć dostęp do środowiska ADK Web.
 
 ## 7. Zarządzanie bezpieczeństwem usług Cloud Run
 
